@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div>
+		
+			
+			<p class="user"></p>
+			
+		
+	</div>
+	<script>
+		const endpoint = "http://localhost:3002/hadist";
+		const RestApi = async () =>  {
+			const result = await fetch(endpoint);
+			const data = await result.json();
+			const h = document.createElement("p");
+		
+			
+				h.innerHTML = data[i].hadist
+			
+			
+		}
+		RestApi()
+	</script>
+</body>
+</html>
